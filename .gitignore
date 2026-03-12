@@ -1,0 +1,70 @@
+# =========================
+# Angular app inside frontend/
+# =========================
+
+# Build output
+frontend/dist/
+frontend/tmp/
+frontend/out-tsc/
+frontend/bazel-out/
+
+# Angular cache
+frontend/.angular/
+frontend/.angular/cache/
+
+# Node modules
+frontend/node_modules/
+
+# Logs
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Coverage
+frontend/coverage/
+
+# Typings
+frontend/typings/
+
+# Screenshots / test output
+frontend/__screenshots__/
+
+# =========================
+# VS Code (inside frontend)
+# =========================
+
+frontend/.vscode/*
+
+!frontend/.vscode/settings.json
+!frontend/.vscode/tasks.json
+!frontend/.vscode/launch.json
+!frontend/.vscode/extensions.json
+
+# =========================
+# IDE / Editor (root level)
+# =========================
+
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# =========================
+# System files
+# =========================
+
+.DS_Store
+Thumbs.db
+
+# =========================
+# Misc
+# =========================
+
+.sass-cache/
+connect.lock
+libpeerconnection.log
+testem.log
+frontend/.vscode/extensions.json
