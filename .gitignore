@@ -1,70 +1,85 @@
 # =========================
-# Angular app inside frontend/
+# FRONTEND (Angular)
 # =========================
 
-# Build output
+frontend/node_modules/
 frontend/dist/
+frontend/.angular/
+frontend/.angular/cache/
+frontend/coverage/
 frontend/tmp/
 frontend/out-tsc/
 frontend/bazel-out/
 
-# Angular cache
-frontend/.angular/
-frontend/.angular/cache/
-
-# Node modules
-frontend/node_modules/
-
-# Logs
-npm-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-
-# Coverage
-frontend/coverage/
-
-# Typings
-frontend/typings/
-
-# Screenshots / test output
-frontend/__screenshots__/
-
-# =========================
-# VS Code (inside frontend)
-# =========================
-
+# VS Code inside frontend
 frontend/.vscode/*
-
 !frontend/.vscode/settings.json
-!frontend/.vscode/tasks.json
-!frontend/.vscode/launch.json
 !frontend/.vscode/extensions.json
+!frontend/.vscode/launch.json
+!frontend/.vscode/tasks.json
+
 
 # =========================
-# IDE / Editor (root level)
+# BACKEND (Spring Boot)
+# =========================
+
+backend/target/
+backend/build/
+backend/out/
+
+# logs
+backend/*.log
+backend/logs/
+
+# IDE backend
+backend/.idea/
+backend/*.iml
+
+backend/.vscode/*
+!backend/.vscode/settings.json
+!backend/.vscode/extensions.json
+!backend/.vscode/launch.json
+!backend/.vscode/tasks.json
+
+backend/.project
+backend/.classpath
+backend/.settings/
+backend/.springBeans
+backend/.sts4-cache/
+
+
+# =========================
+# ROOT IDE
 # =========================
 
 .idea/
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
+.vscode/
+*.iml
+
 
 # =========================
-# System files
+# OS files
 # =========================
 
 .DS_Store
 Thumbs.db
 
+
 # =========================
-# Misc
+# ENV / secrets
 # =========================
 
-.sass-cache/
-connect.lock
-libpeerconnection.log
-testem.log
-frontend/.vscode/extensions.json
+.env
+.env.*
+application-local.properties
+application-dev.properties
+application-prod.properties
+
+
+# =========================
+# Logs / coverage
+# =========================
+
+logs/
+coverage/
+*.log
